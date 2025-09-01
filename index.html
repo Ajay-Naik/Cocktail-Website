@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Cocktail Lab</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container head-wrap">
+        <a class="brand" href="#">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <div class="title">The Cocktail Lab</div>
+            <div class="subtitle">Find, filter, and shake up classics</div>
+          </div>
+        </a>
+        <div class="controls">
+          <div class="search" role="search">
+            <span class="icon">🔎</span>
+            <input
+              id="search"
+              type="search"
+              placeholder="Search by name or ingredient…"
+              autocomplete="off" />
+          </div>
+          <button
+            id="toggleFavs"
+            class="btn btn-ghost pill"
+            aria-pressed="false">
+            ♥ Favorites
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="filters" id="filters"></div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div id="grid" class="grid" aria-live="polite"></div>
+      <div id="empty" class="empty" hidden>
+        No cocktails found. Try a different search or clear filters.
+      </div>
+    </main>
+
+    <dialog id="modal" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <div class="modal-title" id="modalTitle">Recipe</div>
+        <button class="close" id="closeModal" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-media"><img id="modalImg" alt="" /></div>
+        <div class="modal-info">
+          <div class="meta" id="modalMeta"></div>
+          <div>
+            <strong>Ingredients</strong>
+            <ul class="list" id="modalIngredients"></ul>
+          </div>
+          <div>
+            <strong>Method</strong>
+            <ol class="list" id="modalMethod"></ol>
+          </div>
+        </div>
+      </div>
+      <div class="foot">
+        <button class="btn btn-outline" id="copyBtn">Copy recipe</button>
+        <button class="btn btn-primary" id="favBtn">♥ Save to favorites</button>
+      </div>
+    </dialog>
+
+    <template id="cardTmpl">
+      <article class="card">
+        <div class="media">
+          <span class="badge"></span>
+          <button
+            class="fav"
+            title="Toggle favorite"
+            aria-label="Toggle favorite">
+            ♥
+          </button>
+          <img alt="" />
+        </div>
+        <div class="content">
+          <div class="name"></div>
+          <div class="desc"></div>
+          <div class="tags"></div>
+          <div class="actions">
+            <button class="btn btn-primary btn-open">View Recipe</button>
+            <button class="btn btn-outline btn-copy">Copy</button>
+          </div>
+        </div>
+      </article>
+    </template>
+  </body>
+</html>
