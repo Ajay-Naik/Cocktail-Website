@@ -1,4 +1,4 @@
-# 🍹 The Cocktail Lab
+<img width="1624" height="881" alt="Screenshot 2026-06-12 122618" src="https://github.com/user-attachments/assets/e116b3c4-fd1d-44e2-9ee5-453d136a61de" /><img width="1624" height="881" alt="Screenshot 2026-06-12 122618" src="https://github.com/user-attachments/assets/06724e38-5bc0-482a-99c4-b03ce2f1462a" /><img width="1915" height="1095" alt="Screenshot 2026-06-12 122246" src="https://github.com/user-attachments/assets/2e6dc299-e8af-47e6-bbde-8b33652d7cae" /># 🍹 The Cocktail Lab
 
 > Sip, Shake & Discover — Cocktails Made Easy.
 
@@ -24,7 +24,7 @@ A cocktail discovery web app that lets users search, filter, and save their favo
 
 | Home | Search | Favourites |
 |------|--------|------------|
-| ![Home](screenshots/home.png) | ![Search](screenshots/search.png) | ![Favourites](screenshots/favourites.png) |
+| ![Home](![Uploading Screenshot 2026-06-12 122246.png…]) | ![Search]![Uploading Screenshot 2026-06-12 122618.png…] | ![Favourites]![Uploading Screenshot 2026-06-12 122618.png…] |
 
 ---
 
